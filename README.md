@@ -1,4 +1,4 @@
-###Cacti 0.8.8b server container
+###Cacti 0.8.8b server container with enhancements
 Installation based on Centos 7 (polinux/centos7:latest).
 
 Built in Mysql Database server into container. 
