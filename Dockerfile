@@ -18,7 +18,7 @@ mv /data/config/cacti.conf /etc/httpd/conf.d/cacti.conf && \
 mv /data/config/spine.conf /usr/local/spine/etc/spine.conf && \
 cd /data/install/ && \
 ./cron.sh && \
-echo "date.timezone = UTC" >> /etc/php.ini && \
+echo "date.timezone = CET" >> /etc/php.ini && \
 
 # Clenaning installation directories
 rm -rf /data/install/cacti-spine-0.8.8b
