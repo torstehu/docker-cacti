@@ -5,7 +5,7 @@ ADD install/ /data/install
 ADD config/ /data/config
 
 RUN yum update -y && \
-yum install -y --nogpgcheck cacti mariadb-server && \
+yum install -y --nogpgcheck cacti php php-ldap mariadb-server && \
 yum clean all && \
 rm -rf /var/lib/mysql/* && \
 mysql_install_db --user=mysql --ldata=/var/lib/mysql/ && \
