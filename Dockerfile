@@ -1,5 +1,5 @@
 FROM polinux/centos7:latest
-MAINTAINER Przemyslaw Ozgo <linux@ozgo.info>
+MAINTAINER Torstein Husebø <torstein@huseboe.net>
 
 ADD install/ /data/install 
 ADD config/ /data/config
@@ -20,7 +20,7 @@ cd /data/install/ && \
 ./cron.sh && \
 echo "date.timezone = CET" >> /etc/php.ini && \
 
-# Clenaning installation directories
+# Cleaning installation directories
 rm -rf /data/install/cacti-spine-0.8.8b
 
 ADD supervisord.conf /etc/supervisor.d/cacti.conf
